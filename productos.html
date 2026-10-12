@@ -4,17 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Catálogo de celulares disponibles en MegaCel.">
-    <meta name="keywords" content="celulares, precios, catalogo, smartphones">
-    <title>MegaCel - Productos</title>
+    <meta name="description"
+        content="Catálogo completo de iPhones en MegaCel: modelos, precios y especificaciones técnicas.">
+    <meta name="keywords" content="iphone, celulares, catalogo, MegaCel, especificaciones">
+    <meta name="author" content="MegaCel">
+    <title>MegaCel - Catálogo de Productos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/estilos.css">
+    <!-- Iconos de redes sociales con Font Awesome, según el material de clase -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
 
     <header>
+        <div class="barra-promo">
+            <p>🚚 Envío gratis en compras mayores a S/ 300 &nbsp;·&nbsp; Recojo en tienda el mismo día</p>
+        </div>
         <div class="contenedor-header">
-            <h1 class="logo">Mega<span class="logo-acento">Cel</span></h1>
+            <h1 class="logo"><a href="index.html">Mega<span class="logo-acento">Cel</span></a></h1>
+
             <nav>
                 <ul class="menu">
                     <li><a href="index.html">Inicio</a></li>
@@ -26,73 +38,100 @@
     </header>
 
     <main>
-        <h2>Nuestro catálogo de celulares</h2>
-        <p>Estos son algunos de los modelos disponibles actualmente en tienda.<br>
-            Los precios incluyen IGV.</p>
 
-        <table class="tabla-productos">
-            <thead>
-                <tr>
-                    <th>Imagen</th>
-                    <th>Modelo</th>
-                    <th>Marca</th>
-                    <th>Almacenamiento</th>
-                    <th>Precio</th>
-                    <th>Stock</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <img src="imagenes/iphone11.png" alt="iPhone 11" width="70">
-                    </td>
-                    <td>iPhone 11</td>
-                    <td>Apple</td>
-                    <td>256 GB</td>
-                    <td>S/ 700</td>
-                    <td>Disponible</td>
-                </tr>
+        <section class="pagina-hero">
+            <h2>Catálogo completo de iPhones</h2>
+            <p>Elige un modelo para ver precio, descripción y especificaciones técnicas completas.</p>
+        </section>
 
-                <tr>
-                    <td>
-                        <img src="imagenes/iphone13.png" alt="iPhone 13" width="70">
-                    </td>
-                    <td>iPhone 13</td>
-                    <td>Apple</td>
-                    <td>128 GB</td>
-                    <td>S/ 1000</td>
-                    <td>Últimas unidades</td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="imagenes/iphone14.png" alt="iPhone 14" width="70">
-                    </td>
-                    <td>iPhone 14</td>
-                    <td>Apple</td>
-                    <td>128 GB</td>
-                    <td>S/ 1,300</td>
-                    <td>Disponible</td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="imagenes/iphone15.png" alt="iPhone 15" width="70">
-                    </td>
-                    <td>iPhone 15</td>
-                    <td>Apple</td>
-                    <td>128 GB</td>
-                    <td>S/ 1700</td>
-                    <td>Disponible</td>
-                </tr>
-            </tbody>
-        </table>
+        <section class="catalogo" id="catalogo">
+            <div class="catalogo-grid">
 
-        <p>¿Tienes dudas sobre algún modelo? <a href="contacto.html">Contáctanos aquí</a>.</p>
+                <article class="tarjeta">
+                    <span class="tarjeta-icono">🏷️</span>
+                    <img src="imagenes/iphone13.png" alt="iPhone 13">
+                    <h3>iPhone 13</h3>
+                    <p class="tarjeta-precio">S/ 1,699</p>
+                    <a href="iphone-13.html" class="boton boton-secundario">Ver detalle</a>
+                </article>
+
+                <article class="tarjeta">
+                    <span class="tarjeta-icono">💸</span>
+                    <img src="imagenes/se.webp" alt="iPhone SE (3ra generación)">
+                    <h3>iPhone SE (3ra generación)</h3>
+                    <p class="tarjeta-precio">S/ 1,899</p>
+                    <a href="iphone-se.html" class="boton boton-secundario">Ver detalle</a>
+                </article>
+
+                <article class="tarjeta">
+                    <span class="tarjeta-icono">⚖️</span>
+                    <img src="imagenes/iphone14.png" alt="iPhone 14">
+                    <h3>iPhone 14</h3>
+
+                    <p class="tarjeta-precio">S/ 3,299</p>
+                    <a href="iphone-14.html" class="boton boton-secundario">Ver detalle</a>
+                </article>
+
+                <article class="tarjeta">
+                    <span class="tarjeta-icono">⭐</span>
+                    <img src="imagenes/iphone15.png" alt="iPhone 15">
+                    <h3>iPhone 15</h3>
+                    <p class="tarjeta-precio">S/ 3,999</p>
+                    <a href="iphone-15.html" class="boton boton-secundario">Ver detalle</a>
+                </article>
+
+                <article class="tarjeta">
+                    <span class="tarjeta-icono">🏆</span>
+                    <img src="imagenes/iphone15pro.webp" alt="iPhone 15 Pro">
+                    <h3>iPhone 15 Pro</h3>
+                    <p class="tarjeta-precio">S/ 5,499</p>
+                    <a href="iphone-15-pro.html" class="boton boton-secundario">Ver detalle</a>
+                </article>
+
+                <article class="tarjeta">
+                    <span class="tarjeta-icono">🆕</span>
+                    <img src="imagenes/iphone17.jpg" alt="iPhone 17">
+                    <h3>iPhone 17</h3>
+                    <p class="tarjeta-precio">S/ 4,599</p>
+                    <a href="iphone-17.html" class="boton boton-secundario">Ver detalle</a>
+                </article>
+
+            </div>
+        </section>
+
     </main>
 
     <footer>
-        <p>Av. Progreso 178 ATE, Lima - Perú</p>
-        <p>Escríbenos: <a href="mailto:contacto@megacel.com">contacto@megacel.com</a></p>
-        <p>&copy; 2026 MegaCel. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <p>Síguenos y contáctanos en nuestras redes sociales</p>
+            <div class="redes-iconos">
+                <a href="https://www.instagram.com/#" class="red-social instagram" target="_blank"
+                    rel="noopener noreferrer" aria-label="Instagram de MegaCel" title="Instagram">
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.facebook.com/" class="red-social facebook" target="_blank"
+                    rel="noopener noreferrer" aria-label="Facebook de MegaCel" title="Facebook">
+                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a href="https://wa.me/51919641510" class="red-social whatsapp" target="_blank"
+                    rel="noopener noreferrer" aria-label="Contactar a MegaCel por WhatsApp"
+                    title="WhatsApp: +51 919 641 510">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                </a>
+            </div>
+            <p class="redes-telefono">WhatsApp: +51 919 641 510</p>
+        </div>
+
+        <div class="footer-col">
+            <p><span class="icono">🏠</span> Av. Progreso 178 ATE, Lima - Perú</p>
+        </div>
+        <div class="footer-col">
+            <p><span class="icono">✉️</span> <a href="mailto:contacto@megacel.com">contacto@megacel.com</a></p>
+        </div>
+        <div class="footer-col">
+            <p>&copy; 2026 MegaCel. Todos los derechos reservados.</p>
+        </div>
+
     </footer>
 
 </body>

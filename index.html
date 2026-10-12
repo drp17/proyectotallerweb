@@ -8,14 +8,25 @@
     <meta name="keywords" content="celulares, smartphones, tienda, MegaCel, telefonos, accesorios">
     <meta name="author" content="MegaCel">
     <title>MegaCel - Tienda de Celulares</title>
+
+    <!-- Fuente personalizada (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/estilos.css">
+    <!-- Iconos de redes sociales con Font Awesome, según el material de clase -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
 
     <header>
+        <div class="barra-promo">
+            <p>🚚 Envío gratis en compras mayores a S/ 300 &nbsp;·&nbsp; Recojo en tienda el mismo día</p>
+        </div>
         <div class="contenedor-header">
-            <h1 class="logo">Mega<span class="logo-acento">Cel</span></h1>
+            <h1 class="logo"><a href="index.html">Mega<span class="logo-acento">Cel</span></a></h1>
+
             <nav>
                 <ul class="menu">
                     <li><a href="index.html">Inicio</a></li>
@@ -28,16 +39,92 @@
 
     <main>
 
+
         <section class="hero">
+            <h2>Tu próximo celular está aquí</h2>
+
+            <div class="hero-carrusel">
+                <img src="imagenes/portada.jpg" alt="Celular sobre fondo de color">
+                <img src="imagenes/iPhone-18-Pro-y-iPhone-18-Pro-Max.webp" alt="Celular con funda de colores">
+                <img src="imagenes/images.jpg" alt="Celular con accesorios">
+                <img src="imagenes/iPhone-17-Colors.avif" alt="Celular en superficie de color">
+            </div>
+
             <div class="hero-texto">
-                <h2>Tu próximo celular está aquí</h2>
                 <p>En <strong>MegaCel</strong> encuentras los equipos más recientes del mercado,<br>
                     con garantía oficial y los mejores precios de la ciudad.</p>
                 <p><em>Envíos a todo el país en 24 horas.</em></p>
                 <a href="productos.html" class="boton">Ver catálogo de productos</a>
             </div>
-            <div class="hero-imagen">
-                <img src="imagenes/portada.jpg" alt="Celular sobre fondo de color" width: 100% height: auto>
+        </section>
+
+        <hr>
+
+
+        <section class="catalogo" id="catalogo">
+            <h2>Catálogo destacado</h2>
+
+            <div class="catalogo-grid">
+
+                <article class="tarjeta">
+                    <span class="tarjeta-icono">⭐</span>
+                    <img src="imagenes/iphone15.png" alt="iPhone 15">
+                    <h3>iPhone 15</h3>
+                    <p class="tarjeta-precio">S/ 3,999</p>
+                    <a href="iphone-15.html" class="boton boton-secundario">Ver detalle</a>
+                </article>
+
+                <article class="tarjeta">
+                    <span class="tarjeta-icono">🏆</span>
+                    <img src="imagenes/iphone15pro.webp" alt="iPhone 15 Pro">
+                    <h3>iPhone 15 Pro</h3>
+                    <p class="tarjeta-precio">S/ 5,499</p>
+                    <a href="iphone-15-pro.html" class="boton boton-secundario">Ver detalle</a>
+                </article>
+
+                <article class="tarjeta">
+                    <span class="tarjeta-icono">💸</span>
+                    <img src="imagenes/iphone14.png" alt="iPhone 14">
+                    <h3>iPhone 14</h3>
+                    <p class="tarjeta-precio">S/ 3,299</p>
+                    <a href="iphone-14.html" class="boton boton-secundario">Ver detalle</a>
+                </article>
+
+            </div>
+
+            <!-- Tabla comparativa -->
+            <div class="tabla-responsive">
+                <table class="tabla-comparativa">
+                    <caption>Comparativa rápida de modelos</caption>
+                    <thead>
+                        <tr>
+                            <th>Modelo</th>
+                            <th>Pantalla</th>
+                            <th>Chip</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>iPhone 14</td>
+                            <td>6.1"</td>
+                            <td>A15 Bionic</td>
+                            <td>S/ 3,299</td>
+                        </tr>
+                        <tr>
+                            <td>iPhone 15</td>
+                            <td>6.1"</td>
+                            <td>A16 Bionic</td>
+                            <td>S/ 3,999</td>
+                        </tr>
+                        <tr>
+                            <td>iPhone 15 Pro</td>
+                            <td>6.1" ProMotion</td>
+                            <td>A17 Pro</td>
+                            <td>S/ 5,499</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
 
@@ -46,10 +133,10 @@
         <section class="beneficios">
             <h2>¿Por qué comprar en MegaCel?</h2>
             <ul>
-                <li>Garantía de <strong>12 meses</strong> en todos los equipos.</li>
-                <li>Más de <strong>10 modelos</strong> disponibles.</li>
-                <li>Atención personalizada vía nuestro formulario de contacto.</li>
-                <li>Pago contra entrega en Lima Metropolitana.</li>
+                <li><span class="icono">🛡️</span> Garantía de <strong>12 meses</strong> en todos los equipos.</li>
+                <li><span class="icono">📱</span> Más de <strong>10 marcas</strong> disponibles.</li>
+                <li><span class="icono">✉️</span> Atención personalizada vía nuestro formulario de contacto.</li>
+                <li><span class="icono">🚚</span> Pago contra entrega en Lima Metropolitana.</li>
             </ul>
         </section>
 
@@ -78,24 +165,26 @@
 
             <form class="formulario-contacto" action="#" method="post">
 
-                <label for="nombre">Nombre completo</label>
+                <label for="nombre"><span class="icono">👤</span> Nombre completo</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
 
-                <label for="correo">Correo electrónico</label>
+                <label for="correo"><span class="icono">✉️</span> Correo electrónico</label>
                 <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
 
-                <label for="telefono">Teléfono</label>
+                <label for="telefono"><span class="icono">📞</span> Teléfono</label>
                 <input type="tel" id="telefono" name="telefono" placeholder="+51 900 000 000">
 
-                <label for="modelo">Modelo de interés</label>
+                <label for="modelo"><span class="icono">📱</span> Modelo de interés</label>
                 <select id="modelo" name="modelo">
-                    <option value="11">iPhone 11 </option>
                     <option value="13">iPhone 13</option>
+                    <option value="se">iPhone SE (3ra generación)</option>
                     <option value="14">iPhone 14</option>
-                    <option value="15">iPhone 15 </option>
+                    <option value="15">iPhone 15</option>
+                    <option value="15pro">iPhone 15 Pro</option>
+                    <option value="17">iPhone 17</option>
                 </select>
 
-                <label for="mensaje">Mensaje</label>
+                <label for="mensaje"><span class="icono">💬</span> Mensaje</label>
                 <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos qué necesitas..."></textarea>
 
                 <button type="submit" class="boton">Enviar mensaje</button>
@@ -105,9 +194,36 @@
     </main>
 
     <footer>
-        <p>Av. Progreso 178 ATE, Lima - Perú</p>
-        <p>Escríbenos: <a href="mailto:contacto@megacel.com">contacto@megacel.com</a></p>
-        <p>&copy; 2026 MegaCel. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <p>Síguenos y contáctanos en nuestras redes sociales</p>
+            <div class="redes-iconos">
+                <a href="https://www.instagram.com/#" class="red-social instagram" target="_blank"
+                    rel="noopener noreferrer" aria-label="Instagram de MegaCel" title="Instagram">
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.facebook.com/" class="red-social facebook" target="_blank"
+                    rel="noopener noreferrer" aria-label="Facebook de MegaCel" title="Facebook">
+                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a href="https://wa.me/51919641510" class="red-social whatsapp" target="_blank"
+                    rel="noopener noreferrer" aria-label="Contactar a MegaCel por WhatsApp"
+                    title="WhatsApp: +51 919 641 510">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                </a>
+            </div>
+            <p class="redes-telefono">WhatsApp: +51 919 641 510</p>
+        </div>
+
+        <div class="footer-col">
+            <p><span class="icono">🏠</span> Av. Progreso 178 ATE, Lima - Perú</p>
+        </div>
+        <div class="footer-col">
+            <p><span class="icono">✉️</span> <a href="mailto:contacto@megacel.com">contacto@megacel.com</a></p>
+        </div>
+        <div class="footer-col">
+            <p>&copy; 2026 MegaCel. Todos los derechos reservados.</p>
+        </div>
+
     </footer>
 
 </body>
